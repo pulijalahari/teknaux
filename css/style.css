@@ -38,7 +38,7 @@ section.page {margin-top:60px;padding:40px 0;}
 .page-title {position:relative;width:100%;font-size:45px;color:#636466;font-weight:normal;text-align:center;margin:135px 0 0 0;letter-spacing:-0.1rem;text-transform:uppercase;font-family: 'ancillaryregular';}
 .page-title.float {float:left;width:100%;}
 .page-title span {font-weight:300;}
-.page-title .border {position:absolute;left:50%;bottom:-10px;width:100px;height:2px;background-color:#eee;margin-left:-50px;}
+.page-title .border {position:absolute;left:50%;bottom:-10px;width:100px;height:2px;background-color:#fffeee;margin-left:-50px;}
 .page-subtitle {width:100%;font-size:20px;color:#8a8c90;font-weight:normal;text-align:left;margin-top:22px;}
 
 
@@ -46,14 +46,14 @@ section.page {margin-top:60px;padding:40px 0;}
 /*----------------------------------------------------*/
 /*	Header
 /*----------------------------------------------------*/
-#header {position:fixed;display:block;width:100%;height:130px;z-index:9;min-width:320px; background:#000;}
+#header {position:fixed;display:block;width:100%;height:150px;z-index:9;min-width:320px; background-image:url(../img/Header-Bg.png); background-repeat:repeat-x; background-color:#000000;}
 #header .main {position:relative;z-index:3;}
-#header .after {position:absolute;width:100%;height:100%;top:-60px;z-index:2;background-color:#000;-webkit-box-shadow:0px 0px 0px 0px rgba(0,0,0,0.4);-moz-box-shadow:0px 0px 0px 0px rgba(0,0,0,0.4);box-shadow:0px 0px 0px 0px rgba(0,0,0,0.4);}
+#header .after {position:absolute;width:100%;height:100%;top:-50px;z-index:2;-webkit-box-shadow:0px 0px 0px 0px rgba(0,0,0,0.4);-moz-box-shadow:0px 0px 0px 0px rgba(0,0,0,0.4);box-shadow:0px 0px 0px 0px rgba(0,0,0,0.4);}
 
 #header.sticky .after {top:0;-webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.05);-moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.05);box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.05);}
-#header.sticky #navigation li a {color:#bcbec0;}
+#header.sticky #navigation li a {color:#000;}
 #header.sticky #navigation li a:hover {color:#fff;}
-#header.sticky #navigation ul li a {color:#bcbec0;}
+#header.sticky #navigation ul li a {color:#000;}
 #header.sticky #navigation li span.border {color:#fff;}
 #header.sticky #logo .label {background-color:transparent;}
 #header.sticky #logo h1 {color:#fff;}
@@ -94,7 +94,7 @@ section.page {margin-top:60px;padding:40px 0;}
 /*	Carousel
 /*----------------------------------------------------*/
 #carousel {position:relative;display:block;width:100%;bottom:0;top:0;height:100%;overflow:hidden;height:300px;}
-#carousel .carousel-holder {position:absolute;display:block;width:100%;height:100%;bottom:0;top:0;background-color:#000;overflow:hidden;}
+#carousel .carousel-holder {position:absolute;display:block;width:100%;height:100%;bottom:0;top:130px;background-color:#000;overflow:hidden;}
 #carousel .bg-img {height:100%;}
 #carousel .bg-1 .sl-slide-inner {background: url(../img/carousel/slide-1.jpg) 50% 0;}
 #carousel .bg-img-2 {background-image: url(../img/carousel/slide-2.jpg);}
@@ -105,7 +105,7 @@ section.page {margin-top:60px;padding:40px 0;}
 .prev {top:50%;margin-top:-20px;position:absolute;cursor:pointer;opacity:1;background:url('../img/arrow.png') no-repeat -10px -10px;-webkit-transition : all 0.2s ease-out;-moz-transition : all 0.2s ease-out;transition : all 0.2s ease-out;left:150px;width:45px;height:45px;z-index:100000;}
 .next {top:50%;margin-top:-20px;position:absolute;cursor:pointer;opacity:1;background:url('../img/arrow.png') no-repeat -145px -10px;-webkit-transition : all 0.2s ease-out;-moz-transition : all 0.2s ease-out;transition : all 0.2s ease-out;right:150px;width:45px;height:45px;z-index:100000;}
 .prev:hover, .next:hover {opacity:.4;}
-.prev:active, .next:active {opacity:.4;}
+.prev:active, .next:active {opacity:0;}
 
 .slide-text {position:relative;top:0;}
 .slide-text li {height:21px;}
@@ -178,25 +178,27 @@ section.page {margin-top:60px;padding:40px 0;}
 /*----------------------------------------------------*/
 /*	Navigation
 /*----------------------------------------------------*/
-#navigation {float:right;font-size:0;position:relative;top:-25px;text-align:center;width:100%;}
+#navigation {float:right;font-size:0;position:relative;top:-12px;text-align:center;width:100%;}
 #navigation li {display:inline-block;font-size:19px;width:140px;}
 
-#navigation li a {display:block;position:relative;padding:21px 0;margin:0;color:#bcbec0;text-transform:uppercase;font-size:0.9em;}
+#navigation li a {display:block;position:relative;padding:15px 0;margin:0;color:#000;text-transform:uppercase;font-size:0.9em;}
 #navigation li span.arrow {position:relative;top:-1px;}
 #navigation li span.border {position:absolute;left:0;bottom:-5px;width:0;height:5px;background-color:transparent; color:#fff;}
 #navigation li a:hover span.border, #navigation li a.active span.border {width:100%; color:#fff !important;}
-#navigation ul li a:hover {background-color:#fff;color:#000!important;}
+#navigation ul li a:hover {background-color:#fff;}
 
 /* navigation submenu */
 #navigation ul {display:none;position:absolute;margin:0;padding:0;text-align:left;}
 #navigation ul li {display:block;position:relative;}
-#navigation ul li a {width:150px;background-color:#000;padding:10px 20px;}
+#navigation ul li a {width:150px;background-color:#000;padding:10px 20px;
+background-color:#CC3399;}
 #navigation li:hover > ul {display:block;}
 
 /* navigation sub sub menu */
 #navigation ul li ul {display:none;position:absolute;top:0;left:190px;}
 
-.header_call {float:right; background:url(../img/call-icon.png) no-repeat left 5px; color:#fff; font-size:24px; padding:2px 0 1px 42px; margin:20px 45px 20px 0;}
+.header_call {float:right; background:url(../img/call-icon.png) no-repeat left 0px; color:#fff; font-size:24px; padding:2px 0 1px 42px; margin:40px 45px 40px 0;}
+.header_email {float:left; background:url(../img/bg_email_f.png) no-repeat left 7px; color:#fff; font-size:24px; padding:2px 0 1px 42px; margin:40px 45px 40px 45px;}
 
 /*----------------------------------------------------*/
 /*	Logo
@@ -422,18 +424,18 @@ section.page {margin-top:60px;padding:40px 0;}
 /***************************************************************************************************************************/
 /***************************************************************************************************************************/
 
-#wedo .detail {position:relative;float:left;width:100%;padding:100px 0 100px 0;background:#3f3f3f; margin:25px 0 0 0;}
+#wedo .detail {position:relative;float:left;width:100%;padding:100px 0 100px 0;background:#e7da6f; margin:25px 0 0 0;}
 #wedo .detail .smart-list li {height:200px;}
 #wedo .detail .smart-list img {width:auto;margin:0;border:4px solid #000;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;}
 #wedo .detail .smart-list h4, .detail .smart-list p, .detail .smart-list i {color:#fff;}
 #wedo .detail .smart-list li:hover > a img {border-color:#fff;}
 #wedo .detail h2.page-title {color:#fff;font-size:45px;margin:25px 0 45px 0; font-weight:normal; line-height:54px;font-family: 'ancillaryregular';}
 #wedo .detail h2.page-title .border {background-color:#fff;height:1px;bottom:-24px;}
-#wedo .detail h3.page-subtitle {margin-top:34px;color:#d3d5d6; font-size:20px; text-align:justify; line-height:34px; font-weight:normal;}
+#wedo .detail h3.page-subtitle {margin-top:34px;color:#333; font-size:20px; text-align:justify; line-height:34px; font-weight:normal;}
 #wedo .detail h3.page-subtitle.white {color:#fff;}
 
 
-#team .inside {position:relative;float:left;width:100%;padding:100px 0 100px 0;background:#3f3f3f; margin:25px 0 0 0;}
+#team .inside {position:relative;float:left;width:100%;padding:100px 0 100px 0;background:#e7da6f; margin:25px 0 0 0;}
 #team .inside .smart-list li {height:200px;}
 #team .inside .smart-list img {width:auto;margin:0;border:4px solid #000;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;}
 #team .inside .smart-list h4, .inside .smart-list p, .inside .smart-list i {color:#fff;}
@@ -446,19 +448,19 @@ section.page {margin-top:60px;padding:40px 0;}
 #team .member {float:left; width:450px; padding:25px 20px;}
 #team .member .member_pic {float:left; width:130px; height:130px; padding:10px; border:3px solid #9d9fa2; border-radius: 100px;}
 #team .member .member_pic img {width:100%; height:100%;}
-#team .member .member_text {float:right; width:280px; color:#bcbec0; font-size:20px; text-align:left; padding:20px 0 0 0;}
+#team .member .member_text {float:right; width:280px; color:#333; font-size:20px; text-align:left; padding:20px 0 0 0;}
 #team .member h1 {font-size:22px; line-height:24px; height:0; font-weight:bold;}
 #team .member h2 {font-size:21px; line-height:24px; font-weight:normal;}
 
 
-#blog .inner_blog {position:relative;float:left;width:100%;padding:40px 0 40px 0;background:#3f3f3f; margin:25px 0 0 0;}
+#blog .inner_blog {position:relative;float:left;width:100%;padding:40px 0 40px 0;background:#cfb949; margin:25px 0 0 0;}
 #blog .inner_blog .smart-list li {height:200px;}
 #blog .inner_blog .smart-list img {width:auto;margin:0;border:4px solid #000;border-radius:50%;-moz-border-radius:50%;-webkit-border-radius:50%;}
 #blog .inner_blog .smart-list h4, .inner_blog .smart-list p, .inner_blog .smart-list i {color:#fff;}
 #blog .inner_blog .smart-list li:hover > a img {border-color:#fff;}
 #blog .inner_blog h2.page-title {color:#fff;font-size:45px;margin:90px 0 45px 0; font-weight:normal; line-height:54px;font-family: 'ancillaryregular';}
 #blog .inner_blog h2.page-title .border {background-color:#fff;height:1px;bottom:-24px;}
-#blog .inner_blog h3.page-subtitle {color:#d3d5d6; font-size:20px; text-align:left; font-weight:bold; font-style:italic; line-height:34px; padding:15px 10px;}
+#blog .inner_blog h3.page-subtitle {color:#333; font-size:20px; text-align:left; font-weight:bold; font-style:italic; line-height:34px; padding:15px 10px;}
 #blog .inner_blog h3.page-subtitle.white {color:#fff;}
 
 
@@ -481,8 +483,8 @@ section.page {margin-top:60px;padding:40px 0;}
 .conta .addr {float:left;width:350px;}
 .conta .addr h6 {font-size:33px; line-height:42px; font-weight:normal; color:#808285; margin-bottom:15px; margin-top:0px;}
 .conta .addr p {font-size:22px; line-height:24px; font-weight:normal; color:#636466; margin-bottom:15px;}
-.conta .addr .phone {font-size:22px; line-height:24px; font-weight:normal; color:#fff; margin-bottom:15px; background:#666 url(../img/bg_phone_f.png) no-repeat 15px 10px; padding:10px 10px 10px 60px;}
-.conta .addr .email {font-size:22px; line-height:24px; font-weight:normal; color:#fff; margin-bottom:15px; background:#666 url(../img/bg_email_f.png) no-repeat 15px 13px; padding:10px 10px 10px 60px;}
+.conta .addr .phone {font-size:22px; line-height:24px; font-weight:normal; color:#fff; margin-bottom:15px; background:#c5ab20 url(../img/bg_phone_f.png) no-repeat 15px 10px; padding:10px 10px 10px 60px;}
+.conta .addr .email {font-size:22px; line-height:24px; font-weight:normal; color:#fff; margin-bottom:15px; background:#c5ab20 url(../img/bg_email_f.png) no-repeat 15px 13px; padding:10px 10px 10px 60px;}
 .conta .addr .soc {width:77px; height:77px; float:left; margin-right:15px;}
 .conta .right_form {float:right;width:600px;}
 .conta .right_form .row {float:left;width:600px; margin-bottom:20px;}
@@ -500,8 +502,8 @@ section.page {margin-top:60px;padding:40px 0;}
 .how_list_2 ul li {background:#666 url(../img/tick.png) no-repeat 5px 8px; color:#fff; width:43%; margin:5px 2px 5px 2px; padding:10px 5px 10px 30px; float:left;}
 
 .how_list_3 ul {margin:0; padding:0;}
-.how_list_3 ul li {background:#9d9fa2; color:#eceded; width:48%; margin:9px 1%; padding:10px 0px; float:left; text-align:center; font-size:20px; line-height:22px;}
-.how_list_3 ul li:last-child {background:#9d9fa2; color:#eceded; width:70%; margin:9px 15%; padding:10px 0px; float:left; text-align:center; font-size:20px; line-height:22px;}
+.how_list_3 ul li {background:#c5ab20; color:#fff; width:48%; margin:9px 1%; padding:10px 0px; float:left; text-align:center; font-size:20px; line-height:22px;}
+.how_list_3 ul li:last-child {background:#c5ab20; color:#fff; width:70%; margin:9px 15%; padding:10px 0px; float:left; text-align:center; font-size:20px; line-height:22px;}
 
 .wedo_01 {width:150px; height:100px; float:left; margin:10px;}
 
