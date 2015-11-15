@@ -99,8 +99,8 @@ section.page {margin-top:60px;padding:40px 0;}
 #carousel .bg-1 .sl-slide-inner {background: url(../img/carousel/slide-1.jpg) 50% 0;}
 #carousel .bg-img-2 {background-image: url(../img/carousel/slide-2.jpg);}
 #carousel .bg-img-3 {background-image: url(../img/carousel/slide-3.jpg);}
-#carousel .bg-img-4 {background-image: url(../img/carousel/slide-11.jpg);}
-#carousel .bg-img-5 {background-image: url(../img/carousel/slide-333.jpg);}
+#carousel .bg-img-4 {background-image: url(../img/carousel/slide-4.jpg);}
+
 
 .prev {top:50%;margin-top:-20px;position:absolute;cursor:pointer;opacity:1;background:url('../img/arrow.png') no-repeat -10px -10px;-webkit-transition : all 0.2s ease-out;-moz-transition : all 0.2s ease-out;transition : all 0.2s ease-out;left:150px;width:45px;height:45px;z-index:100000;}
 .next {top:50%;margin-top:-20px;position:absolute;cursor:pointer;opacity:1;background:url('../img/arrow.png') no-repeat -145px -10px;-webkit-transition : all 0.2s ease-out;-moz-transition : all 0.2s ease-out;transition : all 0.2s ease-out;right:150px;width:45px;height:45px;z-index:100000;}

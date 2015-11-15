@@ -175,6 +175,9 @@ var App = {
 				images:[
 					"img/carousel/slide-1.jpg",
 					"img/carousel/slide-2.jpg",
+
+"img/carousel/slide-3.jpg",
+"img/carousel/slide-4.jpg",
 				]
 				
 			});
