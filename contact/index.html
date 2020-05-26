@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>TEKNAUX - Contact</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <script src="https://kit.fontawesome.com/67ee4f0eb7.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+        <script>
+            function showSubNav() {
+                var x = document.getElementById("subNav");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </head>
+    <body class="is-preload contactUs">
+
+        <!-- Header -->
+            <header id="header">
+                <a class="logo" href="../index.html">TEKNAUX</a>
+                <nav>
+                    <a href="#menu">Menu</a>
+                </nav>
+            </header>
+
+        <!-- Nav -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="../index.html" class="navHome">Home</a></li>
+                <li>
+                    <a href="../services/index.html" class="navService">Services</a>
+                    <a class="icon fa-chevron-down subNavArrow" onclick="showSubNav()"><span class="label">Icon</span></a>
+                    <ul id="subNav" class="alt">
+                        <li><a href="../services/data-and-analytics/index.html">Data & Analytics</a></li>
+                        <li><a href="../services/devops/index.html">DevOps</a></li>
+                        <li><a href="../services/digital/index.html">Digital</a></li>
+                        <li><a href="../services/managed-services/index.html">Managed Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="../about-us/index.html">About Us</a></li>
+                <li><a href="../careers/index.html">Careers</a></li>
+                <li><a href="index.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Heading -->
+            <section id="banner" class="small">
+                <div class="inner">
+                    <h1>CONTACT</h1>
+                </div>
+                <video autoplay loop muted playsinline src="../images/banner.mov"></video>
+            </section>
+
+        <!-- Highlights -->
+            <section class="wrapper">
+                <div class="inner contactUs">
+                    <header class="special">
+                        <h2>Get in touch with us</h2>
+                    </header>
+
+                    <div class="highlights contact">
+                        <section>
+                            <div class="content">
+                                <a href="mailto:contact@teknaux.com"><span class="icon fa-envelope"><span class="label">Icon</span></span>contact@teknaux.com</a>
+                                <a href="tel:4045280932"><span class="icon fa-mobile-alt"><span class="label">Icon</span></span>404.528.0932</a>
+                                <a href="https://www.google.com/maps/place/5490+McGinnis+Village+Pl+%23225,+Alpharetta,+GA+30005/@34.0916551,-84.2008338,17z/data=!3m1!4b1!4m5!3m4!1s0x88f59ebaff4f2f09:0xf69670d480ce916c!8m2!3d34.0916551!4d-84.1986451" class="markerLink"><span class="icon fa-map-marker-alt"><span class="label">Icon</span></span><p>5490 McGinnis Village Place, Ste 225<br>Alpharetta, GA 30005</p></a>
+                                <div id="mapWrapper"  class="google-maps">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3304.1360470227614!2d-84.20083378478391!3d34.091655080595324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f59ebaff4f2f09%3A0xf69670d480ce916c!2s5490%20McGinnis%20Village%20Pl%20%23225%2C%20Alpharetta%2C%20GA%2030005!5e0!3m2!1sen!2sus!4v1590435952303!5m2!1sen!2sus" width="400" height="450" frameborder="0" id="contactMap" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="content">
+                                <header>
+                                    <h3>Send us a message</h3>
+                                </header>
+                                <form id="fcf-form-id" class="fcf-form-class" method="post" action="../assets/php/contact-form-process.php">
+                                    <div class="row gtr-uniform">
+                                        <div class="col-12">
+                                            <input type="text" name="name" id="name" value="" placeholder="Name" required />
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="email" name="email" id="email" value="" placeholder="Email" required />
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="tel" name="phone" id="phone" value="" placeholder="Phone" required />
+                                        </div>
+                                        <div class="col-12">
+                                            <input type="text" name="company" id="company" value="" placeholder="Company" required />
+                                        </div>
+                                        <div class="col-12">
+                                            <textarea id="message" name="message" rows="6" maxlength="3000" placeholder="Your Message" required></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" id="submit" class="button primary fit">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+                    <div class="content">
+                        <section>
+                            <h3><img src="../images/logo_light.png" class="image" /></h3>
+                            <p>
+                                <a href="https://www.google.com/maps/place/5490+McGinnis+Village+Pl+%23225,+Alpharetta,+GA+30005/@34.0916551,-84.2008338,17z/data=!3m1!4b1!4m5!3m4!1s0x88f59ebaff4f2f09:0xf69670d480ce916c!8m2!3d34.0916551!4d-84.1986451">5490 McGinnis Village Place, Ste 225<br>
+                                Alpharetta, GA 30005</a><br>
+                                <a href="mailto:contact@teknaux.com">contact@teknaux.com</a><br>
+                                <a href="tel:4045280932">404.528.0932</a>
+                            </p>
+                        </section>
+                        <section>
+                            <ul class="alt">
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="../services/index.html">Services</a></li>
+                                <li><a href="../about-us/index.html">About Us</a></li>
+                                <li><a href="../careers/index.html">Careers</a></li>
+                                <li><a href="index.html">Contact</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h4>FOLLOW US</h4>
+                            <ul class="plain">
+                                <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+                                <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                                <li><a href="https://www.linkedin.com/company/teknaux"><i class="icon fa-linkedin">&nbsp;</i>LinkedIn</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="copyright">
+                        &copy; TEKNAUX.
+                    </div>
+                </div>
+            </footer>
+
+        <!-- Scripts -->
+            <script src="../assets/js/jquery.min.js"></script>
+            <script src="../assets/js/browser.min.js"></script>
+            <script src="../assets/js/breakpoints.min.js"></script>
+            <script src="../assets/js/util.js"></script>
+            <script src="../assets/js/main.js"></script>
+
+    </body>
+</html>

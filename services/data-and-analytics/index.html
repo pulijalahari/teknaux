@@ -1,0 +1,559 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>TEKNAUX - Data & Analytics</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="stylesheet" href="../../assets/css/main.css" />
+        <script src="https://kit.fontawesome.com/67ee4f0eb7.js" crossorigin="anonymous"></script>
+        <script>
+            function showSubNav() {
+                var x = document.getElementById("subNav");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+
+            function openService(evt, serviceName) {
+                var i, tabcontent, tablinks;
+
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                document.getElementById(serviceName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+    </head>
+    <body class="is-preload dataAnalytics">
+
+        <!-- Header -->
+            <header id="header">
+                <a class="logo" href="../../index.html">TEKNAUX</a>
+                <nav>
+                    <a href="#menu">Menu</a>
+                </nav>
+            </header>
+
+        <!-- Nav -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="../../index.html" class="navHome">Home</a></li>
+                <li>
+                    <a href="../index.html" class="navService">Services</a>
+                    <a class="icon fa-chevron-down subNavArrow" onclick="showSubNav()"><span class="label">Icon</span></a>
+                    <ul id="subNav" class="alt">
+                        <li><a href="index.html">Data & Analytics</a></li>
+                        <li><a href="../devops/index.html">DevOps</a></li>
+                        <li><a href="../digital/index.html">Digital</a></li>
+                        <li><a href="../managed-services/index.html">Managed Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../about-us/index.html">About Us</a></li>
+                <li><a href="../../careers/index.html">Careers</a></li>
+                <li><a href="../../contact/index.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Heading -->
+            <section id="banner" class="small">
+                <div class="inner">
+                    <h1>DATA & ANALYTICS</h1>
+                </div>
+                <video autoplay loop muted playsinline src="../../images/banner.mov"></video>
+            </section>
+
+        <!-- CTA -->
+            <section id="cta" class="wrapper">
+                <div class="inner servicesSub">
+                    <div class="row">
+                        <div class="col-6 col-12-large">
+                            <p>We drive competitive advantage for our customers by enabling them to become truly data driven. We help organizations design and implement robust enterprise data management strategies and data warehouse builds that ensure the security, accuracy and reliability of data. That is only the start of the journey. We can also transform and operationalise your analytics so you can use data to proactively respond to customers needs rather than interpreting past behaviour. Our services in data and analytics span across advisory, consulting and managed services.</p>
+                        </div>
+                        <div class="col-1 col-12-large"></div>
+                        <div class="col-5 col-12-large">
+                            <span class="image fit"><img src="../../images/data.jpg" alt="" /></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Highlights -->
+            <section class="wrapper servicesSub">
+                <div class="inner">
+                    <div class="tab row">
+                        <div class="col-4 col-12-medium">
+                            <button class="tablinks active" onclick="openService(event, 'AdvisoryServices')"><h3>Advisory Services</h3></button>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <button class="tablinks" onclick="openService(event, 'ConsultingServices')"><h3>Consulting Services</h3></button>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <button class="tablinks" onclick="openService(event, 'ManagedServices')"><h3>Managed Services</h3></button>
+                        </div>
+                    </div>
+                    <div id="AdvisoryServices" class="tabcontent">
+                        <header class="special">
+                            <p>Our extensive experience in delivery means we develop strategies that we know can be executed. Our core strength is developing enterprise data management strategies and health checks encompassing data warehousing, analytics and business intelligence. With our deep data heritage, industry experience and thought leadership, our consultants remain current with their skillsets so they can work with customers to build roadmaps to maintain and maximise the value of their data.</p>
+                        </header>
+                        <div class="row">
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-database"><span class="label">Icon</span></a>
+                                                <h4>Data and analytics strategy</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Data and analytics strategy</h4>
+                                                <h5>Create a roadmap to leverage your data for business value</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-chess-queen"><span class="label">Icon</span></a>
+                                                <h4>Big data strategy</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Big data strategy</h4>
+                                                <h5>Develop a clear plan on how you are going to use big data to maximise business performance</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-heartbeat"><span class="label">Icon</span></a>
+                                                <h4>Platform health-check</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Platform health-check</h4>
+                                                <h5>Enhance decision making, increase efficiency and reduce costs. Assess and identify opportunities for improvement</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-shapes"><span class="label">Icon</span></a>
+                                                <h4>Operating model advisory</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Operating model advisory</h4>
+                                                <h5>Scope, design and build a customer’s information management capabilities</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-tasks"><span class="label">Icon</span></a>
+                                                <h4>Program and project management</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Program and project management</h4>
+                                                <h5>Deliver your project on time and on budget through our pragmatic approach to project management in agile or traditional environments</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-balance-scale"><span class="label">Icon</span></a>
+                                                <h4>Data governance</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Data governance</h4>
+                                                <h5>Improve decision making and productivity by building a framework that ensures the security and integrity of your data</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ConsultingServices" class="tabcontent">
+                        <header class="special">
+                            <p>Despite the unpredictable nature of data, we always deliver successful outcomes for our customers. We have delivered countless solutions including integrating data from CRM, ERP/Finance, billing and operational systems. Using our deep data experience, we have developed multiple tools and frameworks that improve technology adoption and accelerate delivery.We partner with the biggest names in the industry such as MapR, Cloudera, Hortonworks, Tableau, Talend, Oracle and Informatica. Our consulting team also have practical experience using a range of analytical tools, including SAS, R, SPSS and Spark and web analytics tools such as Google Analytics, Adobe and Omniture. However, we are vendor agnostic, meaning we can provide independent advice on the best solution for your organization.</p>
+                        </header>
+                        <div class="row">
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-warehouse"><span class="label">Icon</span></a>
+                                                <h4>Data warehouse design, architecture and development</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Data warehouse design, architecture and development</h4>
+                                                <h5>Build a firm foundation for business intelligence by leveraging our expertise across the data warehouse lifecycle</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-sitemap"><span class="label">Icon</span></a>
+                                                <h4>Big data design, architecture and application development</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Big data design, architecture and application development</h4>
+                                                <h5>Delivering on strategy, MVPs, PoCs and real world ventures taking full advantage of big data paradigms</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-mortar-pestle"><span class="label">Icon</span></a>
+                                                <h4>Data integration</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Data integration</h4>
+                                                <h5>Integrate structured and unstructured data from online and offline systems and add new data feeds quickly and easily</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-cookie-bite"><span class="label">Icon</span></a>
+                                                <h4>Data ingestion</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Data ingestion</h4>
+                                                <h5>Prioritise and process your data efficiently for immediate use</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-user-check"><span class="label">Icon</span></a>
+                                                <h4>Data quality</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Data quality</h4>
+                                                <h5>Develop a data quality framework based on business needs that will increase confidence in your data and insights gained from data</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-eye"><span class="label">Icon</span></a>
+                                                <h4>Traditional BI and data visualization</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Traditional BI and data visualization</h4>
+                                                <h5>Understand your data with intuitive dashboards enabling you to interpret data and provide business insights</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-certificate"><span class="label">Icon</span></a>
+                                                <h4>Master data management</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Master data management</h4>
+                                                <h5>Ensure you are using the most up to date and reliable data across business units</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-chart-bar"><span class="label">Icon</span></a>
+                                                <h4>Advanced analytics</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Advanced analytics</h4>
+                                                <h5>Transform and operationalise your analytics capabilities from interpreting the past to forecasting future behaviour</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-people-arrows"><span class="label">Icon</span></a>
+                                                <h4>Social media and sentiment analysis</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Social media and sentiment analysis</h4>
+                                                <h5>Improve your messaging, marketing strategy, campaigns and customer service by analysing attitudes towards your organization online</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-spell-check"><span class="label">Icon</span></a>
+                                                <h4>Text analytics</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Text analytics</h4>
+                                                <h5>Use statistical pattern learning to make full advantage of information embedded in what is traditionally unstructured and difficult data to mine</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-desktop"><span class="label">Icon</span></a>
+                                                <h4>Machine learning</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Machine learning</h4>
+                                                <h5>Decision trees to Bayesian networks, from supervised to unsupervised and reinforced learning delivered at scale</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-retweet"><span class="label">Icon</span></a>
+                                                <h4>Cognitive and natural language processing</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Cognitive and natural language processing</h4>
+                                                <h5>Take text analytics to the next level with NLP to determine the meaning of phrases and core messaging in tweets and narrative<p></p></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ManagedServices" class="tabcontent">
+                        <header class="special">
+                            <p>Our Managed Services solutions provide a full range of tailored services to ensure your data is working for your business.Our extensive experience across the full application stack provides an end-to-end support and maintenance team for our customer’s solutions, helping them support their data investments and provide high levels of availability and proactive monitoring. Our Managed Services team works alongside our delivery team to ensure a seamless transition from the development phase to production and full support. This transition allows a full knowledge transfer while maintaining continuity of service.</p>
+                        </header>
+                        <div class="row">
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-cloud"><span class="label">Icon</span></a>
+                                                <h4>Managed platforms (on-premise and on the cloud)</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Managed platforms (on-premise and on the cloud)</h4>
+                                                <h5>An accountable full range of services to ensure your data is working for your business with clear expectations around problem management</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-warehouse"><span class="label">Icon</span></a>
+                                                <h4>Managed data warehouse</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Managed data warehouse</h4>
+                                                <h5>Less dependency on key individuals, highly responsive support from a wide domain of expertise always focused on customer outcomes</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-code"><span class="label">Icon</span></a>
+                                                <h4>Managed Hadoop</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Managed Hadoop</h4>
+                                                <h5>Whether experimenting or production scale we offer hassle free Hadoop platforms across any distribution, fully integrated with the Hadoop ecosystem</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+                    <div class="content">
+                        <section>
+                            <h3><img src="../../images/logo_light.png" class="image" /></h3>
+                            <p>
+                                <a href="https://www.google.com/maps/place/5490+McGinnis+Village+Pl+%23225,+Alpharetta,+GA+30005/@34.0916551,-84.2008338,17z/data=!3m1!4b1!4m5!3m4!1s0x88f59ebaff4f2f09:0xf69670d480ce916c!8m2!3d34.0916551!4d-84.1986451">5490 McGinnis Village Place, Ste 225<br>
+                                Alpharetta, GA 30005</a><br>
+                                <a href="mailto:contact@teknaux.com">contact@teknaux.com</a><br>
+                                <a href="tel:4045280932">404.528.0932</a>
+                            </p>
+                        </section>
+                        <section>
+                            <ul class="alt">
+                                <li><a href="../../index.html">Home</a></li>
+                                <li><a href="../index.html">Services</a></li>
+                                <li><a href="../../about-us/index.html">About Us</a></li>
+                                <li><a href="../../careers/index.html">Careers</a></li>
+                                <li><a href="../../contact/index.html">Contact</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h4>FOLLOW US</h4>
+                            <ul class="plain">
+                                <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+                                <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                                <li><a href="https://www.linkedin.com/company/teknaux"><i class="icon fa-linkedin">&nbsp;</i>LinkedIn</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="copyright">
+                        &copy; TEKNAUX.
+                    </div>
+                </div>
+            </footer>
+
+        <!-- Scripts -->
+            <script src="../../assets/js/jquery.min.js"></script>
+            <script src="../../assets/js/browser.min.js"></script>
+            <script src="../../assets/js/breakpoints.min.js"></script>
+            <script src="../../assets/js/util.js"></script>
+            <script src="../../assets/js/main.js"></script>
+
+    </body>
+</html>

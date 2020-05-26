@@ -1,0 +1,467 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>TEKNAUX - Digital</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="stylesheet" href="../../assets/css/main.css" />
+        <script src="https://kit.fontawesome.com/67ee4f0eb7.js" crossorigin="anonymous"></script>
+        <script>
+            function showSubNav() {
+                var x = document.getElementById("subNav");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+
+            function openService(evt, serviceName) {
+                var i, tabcontent, tablinks;
+
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                document.getElementById(serviceName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+    </head>
+    <body class="is-preload digital">
+
+        <!-- Header -->
+            <header id="header">
+                <a class="logo" href="../../index.html">TEKNAUX</a>
+                <nav>
+                    <a href="#menu">Menu</a>
+                </nav>
+            </header>
+
+        <!-- Nav -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="../../index.html" class="navHome">Home</a></li>
+                <li>
+                    <a href="../index.html" class="navService">Services</a>
+                    <a class="icon fa-chevron-down subNavArrow" onclick="showSubNav()"><span class="label">Icon</span></a>
+                    <ul id="subNav" class="alt">
+                        <li><a href="../data-and-analytics/index.html">Data & Analytics</a></li>
+                        <li><a href="../devops/index.html">DevOps</a></li>
+                        <li><a href="index.html">Digital</a></li>
+                        <li><a href="../managed-services/index.html">Managed Services</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../about-us/index.html">About Us</a></li>
+                <li><a href="../../careers/index.html">Careers</a></li>
+                <li><a href="../../contact/index.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Heading -->
+            <section id="banner" class="small">
+                <div class="inner">
+                    <h1>DIGITAL</h1>
+                </div>
+                <video autoplay loop muted playsinline src="../../images/banner.mov"></video>
+            </section>
+
+        <!-- CTA -->
+            <section id="cta" class="wrapper">
+                <div class="inner servicesSub">
+                    <div class="row">
+                        <div class="col-5 col-12-large">
+                            <span class="image fit"><img src="../../images/digital.jpg" alt="" /></span>
+                        </div>
+                        <div class="col-1 col-12-large"></div>
+                        <div class="col-6 col-12-large">
+                            <p>Teknaux delivers end-to-end data-driven digital products & services. Our highly skilled team of consultants ensure we focus on your objectives through the best use of technology. Building rich experiences that drive the end user experience through the smart use of data integration, enables you to gain a competitive advantage.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Highlights -->
+            <section class="wrapper servicesSub">
+                <div class="inner">
+                    <div class="tab row">
+                        <div class="col-4 col-12-medium">
+                            <button class="tablinks active" onclick="openService(event, 'AdvisoryServices')"><h3>Advisory Services</h3></button>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <button class="tablinks" onclick="openService(event, 'ConsultingServices')"><h3>Consulting Services</h3></button>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <button class="tablinks" onclick="openService(event, 'ManagedServices')"><h3>Managed Services</h3></button>
+                        </div>
+                    </div>
+                    <div id="AdvisoryServices" class="tabcontent">
+                        <header class="special">
+                            <p>In order to implement digital solutions that will drive business success and value, you need to asses your current capabilities, develop a clear and actionable plan and also have the ability to test concepts before they go into full design and development phase. We can lay the foundations for your organization to deliver a data driven digital solution that is fit for your business needs.</p>
+                        </header>
+                        <div class="row">
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-map-marked-alt"><span class="label">Icon</span></a>
+                                                <h4>Digital strategy and roadmap development</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Digital strategy and roadmap development</h4>
+                                                <h5>Our industry experience and visabilty across what is happening in the industry can help you develop an actionable strategy and roadmap to set out your journey into digital and the tools, resources and processes you need</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-flask"><span class="label">Icon</span></a>
+                                                <h4>Rapid experimentation and prototyping</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Rapid experimentation and prototyping</h4>
+                                                <h5>We use our own methodology which is based on LEAN and Agile practices to validate ideas and concepts for your solutions. We can show you how to visualise a version of the end state while minimising waste</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-heartbeat"><span class="label">Icon</span></a>
+                                                <h4>Digital health checks</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Digital health checks</h4>
+                                                <h5>Experienced consultants will work with you to understand your desired digital end state, they will identify your organization’s digital maturity then provide you with a position statement and advice on how to reach it</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-sitemap"><span class="label">Icon</span></a>
+                                                <h4>Application design and architecture</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Application design and architecture</h4>
+                                                <h5>We take a technology agnostic approach to developing products and services. This allows us to recommend architecture and technology that are best in class and most suited for your intended business outcomes</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ConsultingServices" class="tabcontent">
+                        <header class="special">
+                            <p>With a rich data heritage we take a data driven approach to digital solution development. We create engaging, interactive and immersive experiences that allow you to maximise the use of your assets. Our Rapid Experimentation methodology (Rapid XP) combines Agile, LEAN and Rapid Application Development allowing us to rapidly iterate so that we can always test and learn and minimise waste. We apply this approach to all of our projects regardless of size, whether it be a mobile application or a bespoke enterprise solution.</p>
+                        </header>
+                        <div class="row">
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-running"><span class="label">Icon</span></a>
+                                                <h4>Rapid application development – web, mobile and portal</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Rapid application development – web, mobile and portal</h4>
+                                                <h5>Test your idea validity and get results fast, proving your idea with your customer base before launching into full development</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-sign-in-alt"><span class="label">Icon</span></a>
+                                                <h4>Bespoke Enterprise Solution development</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Bespoke Enterprise Solution development</h4>
+                                                <h5>Data driven approach to create engaging, interactive and immersive experiences that allow you to maximise the use of your assets</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-globe-americas"><span class="label">Icon</span></a>
+                                                <h4>Web personalization, web analytics and online optimization</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Web personalization, web analytics and online optimization</h4>
+                                                <h5>Enabling you to utilise customer data in realtime to tailor the user experience to maximise engagement and conversion opportunities</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-laptop"><span class="label">Icon</span></a>
+                                                <h4>Digital campaign optimization services</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Digital campaign optimization services</h4>
+                                                <h5>Conversion analysis and an iterative testing approach utilising MVT & A/B testing tools and services</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-chart-pie"><span class="label">Icon</span></a>
+                                                <h4>Digital campaign reporting and analytics services</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Digital campaign reporting and analytics services</h4>
+                                                <h5>Analysis, auditing, reporting and insights based on business web traffic data and user generated online activity and server logs</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-sort-amount-down"><span class="label">Icon</span></a>
+                                                <h4>Qualitative and Quantitative data analysis</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Qualitative and Quantitative data analysis</h4>
+                                                <h5>Combine raw data analysis with industry experience and your internal IP to gain 360 degree insight</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-file-code"><span class="label">Icon</span></a>
+                                                <h4>Bespoke application development</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Bespoke application development</h4>
+                                                <h5>Bespoke applications using accurate and trusted analytical and operational data</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-tasks"><span class="label">Icon</span></a>
+                                                <h4>Intranet and content management system implementation</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Intranet and content management system implementation</h4>
+                                                <h5>Enabling you to surface business information to your teams and relevant content to your customers</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-paint-brush"><span class="label">Icon</span></a>
+                                                <h4>User interface design and development</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>User interface design and development</h4>
+                                                <h5>Bespoke interface design that help drive engagement and interactivity</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-mobile-alt"><span class="label">Icon</span></a>
+                                                <h4>Mobile app development</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Mobile app development</h4>
+                                                <h5>Let us bring your mobile application idea to life from design and development to delivery</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-edit"><span class="label">Icon</span></a>
+                                                <h4>User experience design</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>User experience design</h4>
+                                                <h5>Following industry guidelines and best practices we can build an experience that will get more out of your data</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ManagedServices" class="tabcontent">
+                        <header class="special">
+                            <p></p>
+                        </header>
+                        <div class="row">
+                            <div class="col-3 col-12-medium">
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                        <div class="flip-box-front">
+                                            <div class="flipCenter">
+                                                <a class="icon fa-medkit"><span class="label">Icon</span></a>
+                                                <h4>Platform support and maintenance</h4>
+                                            </div>
+                                        </div>
+                                        <div class="flip-box-back">
+                                            <div class="flipCenter">
+                                                <h4>Platform support and maintenance</h4>
+                                                <h5>Once we have built your solution we have a number of ways in which you can utilise our ongoing support services to manage anything we design and build for you</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!-- Footer -->
+            <footer id="footer">
+                <div class="inner">
+                    <div class="content">
+                        <section>
+                            <h3><img src="../../images/logo_light.png" class="image" /></h3>
+                            <p>
+                                <a href="https://www.google.com/maps/place/5490+McGinnis+Village+Pl+%23225,+Alpharetta,+GA+30005/@34.0916551,-84.2008338,17z/data=!3m1!4b1!4m5!3m4!1s0x88f59ebaff4f2f09:0xf69670d480ce916c!8m2!3d34.0916551!4d-84.1986451">5490 McGinnis Village Place, Ste 225<br>
+                                Alpharetta, GA 30005</a><br>
+                                <a href="mailto:contact@teknaux.com">contact@teknaux.com</a><br>
+                                <a href="tel:4045280932">404.528.0932</a>
+                            </p>
+                        </section>
+                        <section>
+                            <ul class="alt">
+                                <li><a href="../../index.html">Home</a></li>
+                                <li><a href="../index.html">Services</a></li>
+                                <li><a href="../../about-us/index.html">About Us</a></li>
+                                <li><a href="../../careers/index.html">Careers</a></li>
+                                <li><a href="../../contact/index.html">Contact</a></li>
+                            </ul>
+                        </section>
+                        <section>
+                            <h4>FOLLOW US</h4>
+                            <ul class="plain">
+                                <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+                                <li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                                <li><a href="https://www.linkedin.com/company/teknaux"><i class="icon fa-linkedin">&nbsp;</i>LinkedIn</a></li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="copyright">
+                        &copy; TEKNAUX.
+                    </div>
+                </div>
+            </footer>
+
+        <!-- Scripts -->
+            <script src="../../assets/js/jquery.min.js"></script>
+            <script src="../../assets/js/browser.min.js"></script>
+            <script src="../../assets/js/breakpoints.min.js"></script>
+            <script src="../../assets/js/util.js"></script>
+            <script src="../../assets/js/main.js"></script>
+
+    </body>
+</html>
